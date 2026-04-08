@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 
 const navigationLinks = [
-  { name: "Home", href: "/#" },
+  { name: "Home", href: "/#home" },
   { name: "About", href: "/#about" },
   { name: "Work", href: "/#work" },
   { name: "Contact", href: "/#contact" },
@@ -29,8 +29,8 @@ export default function Header() {
   const logoSrc = resolvedTheme === "dark" ? "/logo.svg" : "/logo-white.svg"
 
   return (
-    <div>
-      <header className="flex flex-row items-center justify-between px-[32px] h-12 border-b-2">
+    <div className="sticky top-0 z-10 backdrop-blur-sm">
+      <header className="flex flex-row items-center justify-between px-[46px] sm:mx-[5vw] h-12">
         <Link href="/" className="flex flex-row items-center gap-2">
           <Image src={logoSrc} alt="Logo" width={120} height={100} />
         </Link>
