@@ -55,7 +55,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="p-8 w-full h-full flex flex-col items-start justify-start gap-4">
+    <div className="p-8 max-w-full h-full flex flex-col items-start justify-start gap-4">
       <h1 className="text-2xl mb-4">Contact me!</h1>
       <form
         onSubmit={handleSubmit}
