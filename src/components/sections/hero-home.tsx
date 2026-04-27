@@ -5,7 +5,7 @@ export default function HeroHome() {
     <div id="home" className="flex px-[46px] flex-col items-start justify-end w-full h-[calc(50vh-24px)]">
       <h1 className="text-4xl font-semibold mb-4 text-6xl">Thales Dipa</h1>
       <div className="flex flex-row items-center justify-between w-full">
-        <p className="text-sm text-muted-foreground">Web Developer</p>
+        <p className="text-sm text-muted-foreground">Frontend Software Engineer</p>
         <Link
           href="https://github.com/thales-gsd"
           target="_blank"
